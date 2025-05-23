@@ -119,20 +119,26 @@ a.link-internal.macro-link {
   text-decoration: none;
 }
 
-.fade-in {
-  animation: fadeIn 0.6s ease-in-out;
+.button.is-halfwidth {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
 }
 
-.fade-in-slow {
+.fade-in {
   animation: fadeIn 1.0s ease-in-out;
 }
 
-.fade-in-more-slow {
+.fade-in-slow {
   animation: fadeIn 1.6s ease-in-out;
 }
 
+.fade-in-more-slow {
+  animation: fadeIn 2.2s ease-in-out;
+}
+
 .passage-fade {
-  animation: fadeInPage 0.6s ease-in-out both; 
+  animation: fadeInPage 1.0s ease-in-out both; 
 }
 
 @keyframes fadeIn {
@@ -212,76 +218,76 @@ $(document).on(':passagerender', function (ev) {
 &lt;/figure&gt;
 &lt;p class=&quot;title is-1 has-text-centered fade-in&quot;&gt;Missão: Salve o Clima!&lt;/p&gt;
 &lt;p class=&quot;subtitle is-2 has-text-centered fade-in-slow&quot;&gt;Você foi convocado para salvar o planeta!&lt;/p&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-medium is-rounded is-fullwidth&quot;&gt;Começar Missão&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-medium is-rounded is-halfwidth&quot;&gt;Começar Missão&lt;/span&gt;&#39;&gt;&gt;
 	&lt;&lt;goto &quot;Rodada1&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Rodada1" tags="" position="200,200" size="100,100">&lt;!-- Rodada 1 --&gt;
 &lt;progress class=&quot;progress is-info&quot; value=&quot;1&quot; max=&quot;5&quot;&gt;Rodada 1 de 5&lt;/progress&gt;
-&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 1: Energia Elétrica&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/lightning-icon.png?raw=true&quot; style=&quot;height: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 1: Energia Elétrica&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/lightning-icon.png?raw=true&quot; style=&quot;height: 1.2em; width: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p class=&quot;subtitle is-2 has-text-centered&quot;&gt;Como você vai abastecer sua casa?&lt;/p&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Painéis solares&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Painéis solares&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;goto &quot;Rodada2&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Gerador a diesel&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Gerador a diesel&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 20&gt;&gt;
     &lt;&lt;goto &quot;Rodada2&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Energia da rede elétrica&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Energia da rede elétrica&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 10&gt;&gt;
     &lt;&lt;goto &quot;Rodada2&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Rodada2" tags="" position="400,200" size="100,100">&lt;!-- Rodada 2 --&gt;
 &lt;progress class=&quot;progress is-info&quot; value=&quot;2&quot; max=&quot;5&quot;&gt;Rodada 2 de 5&lt;/progress&gt;
-&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 2: Transporte&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/map-icon.png?raw=true&quot; style=&quot;height: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 2: Transporte&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/map-icon.png?raw=true&quot; style=&quot;height: 1.2em; width: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p class=&quot;subtitle is-2 has-text-centered&quot;&gt;Qual meio de transporte você vai usar para o trabalho?&lt;/p&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Cada um de carro&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Cada um de carro&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 20&gt;&gt;
     &lt;&lt;goto &quot;Rodada3&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Van compartilhada&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Van compartilhada&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 10&gt;&gt;
     &lt;&lt;goto &quot;Rodada3&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Bicicletas/transporte público&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Bicicletas/transporte público&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;goto &quot;Rodada3&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Rodada3" tags="" position="600,200" size="100,100">&lt;!-- Rodada 3 --&gt;
 &lt;progress class=&quot;progress is-info&quot; value=&quot;3&quot; max=&quot;5&quot;&gt;Rodada 3 de 5&lt;/progress&gt;
-&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 3: Alimentação&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/lunch-icon.png?raw=true&quot; style=&quot;height: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 3: Alimentação&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/lunch-icon.png?raw=true&quot; style=&quot;height: 1.2em; width: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p class=&quot;subtitle is-2 has-text-centered&quot;&gt;Qual o cardápio da semana?&lt;/p&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Carne vermelha e refrigerantes&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Carne vermelha e refrigerantes&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 20&gt;&gt;
     &lt;&lt;goto &quot;Rodada4&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Vegetais locais&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Vegetais locais&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;goto &quot;Rodada4&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Industrializados&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Industrializados&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 10&gt;&gt;
     &lt;&lt;goto &quot;Rodada4&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Rodada4" tags="" position="800,200" size="100,100">&lt;!-- Rodada 4 --&gt;
 &lt;progress class=&quot;progress is-info&quot; value=&quot;4&quot; max=&quot;5&quot;&gt;Rodada 4 de 5&lt;/progress&gt;
-&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 4: Lixo&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/garbage-icon.png?raw=true&quot; style=&quot;height: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 4: Lixo&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/garbage-icon.png?raw=true&quot; style=&quot;height: 1.2em; width: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p class=&quot;subtitle is-2 has-text-centered&quot;&gt;Como você vai lidar com o lixo doméstico?&lt;/p&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Compostagem/reciclagem&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Compostagem/reciclagem&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;goto &quot;Rodada5&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Lixo comum&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Lixo comum&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 10&gt;&gt;
     &lt;&lt;goto &quot;Rodada5&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Queimar o lixo&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Queimar o lixo&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 20&gt;&gt;
     &lt;&lt;goto &quot;Rodada5&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Rodada5" tags="" position="1000,200" size="100,100">&lt;!-- Rodada 5 --&gt;
 &lt;progress class=&quot;progress is-info&quot; value=&quot;5&quot; max=&quot;5&quot;&gt;Rodada 5 de 5&lt;/progress&gt;
-&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 5: Consumo&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/box-icon.png?raw=true&quot; style=&quot;height: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;title is-1 has-text-centered&quot;&gt;&lt;span style=&quot;display: inline-flex; align-items: center; gap: 0.3em;&quot;&gt;Rodada 5: Consumo&lt;img src=&quot;https://github.com/williamdsfs/williamdsfs.github.io/blob/main/assets/img/box-icon.png?raw=true&quot; style=&quot;height: 1.2em; width: 1.2em; position: relative; top: 0.1em;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p class=&quot;subtitle is-2 has-text-centered&quot;&gt;O que você faz com itens que não usa mais?&lt;/p&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Jogar fora&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Jogar fora&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 20&gt;&gt;
     &lt;&lt;goto &quot;Resultado&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Doar ou reciclar&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Doar ou reciclar&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;goto &quot;Resultado&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-fullwidth&quot;&gt;Guardar sem uso&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-info is-medium is-rounded is-halfwidth&quot;&gt;Guardar sem uso&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;set $pontuacaoPlaneta -= 10&gt;&gt;
     &lt;&lt;goto &quot;Resultado&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Resultado" tags="" position="1150,150" size="100,100">&lt;!-- Resultado --&gt;
@@ -295,7 +301,7 @@ $(document).on(':passagerender', function (ev) {
 &lt;&lt;else&gt;&gt;
   &lt;p class=&quot;box subtitle is-2 has-text-centered fade-in-slow&quot;&gt;&lt;span class=&quot;icon is-large has-text-danger&quot; style=&quot;margin-right: 0.3em;&quot;&gt;&lt;i class=&quot;fa-solid fa-face-dizzy&quot; style=&quot;color: #e80707;&quot;&gt;&lt;/i&gt;&lt;/span&gt; Alerta! &lt;strong&gt;Planeta em crise&lt;/strong&gt;. Reflita sobre suas escolhas.&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;link &#39;&lt;span class=&quot;button is-medium is-rounded is-fullwidth fade-in-more-slow&quot;&gt;Jogar Novamente&lt;/span&gt;&#39;&gt;&gt;
+&lt;&lt;link &#39;&lt;span class=&quot;button is-medium is-rounded is-halfwidth fade-in-more-slow&quot;&gt;Jogar Novamente&lt;/span&gt;&#39;&gt;&gt;
 	&lt;&lt;goto &quot;Início&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 </tw-passagedata></tw-storydata>
