@@ -51,7 +51,7 @@ content:
         sub_title: Estagiário de TI
         caption: 2014 - 2015
         description: |
-          Suporte às operações diárias de tecnologia e infraestrutura da instituição.
+          - **Operação e Continuidade de Negócio:** Suporte às operações diárias de tecnologia e infraestrutura da instituição.
 
   - title: Formação Acadêmica
     layout: list
@@ -69,6 +69,7 @@ content:
       - layout: top-right
         title: FAETEC
         sub_title: Curso Técnico Integrado, Informática
+        caption: 2012-2014
 
   - title: Competências Técnicas
     layout: text
