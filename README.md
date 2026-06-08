@@ -116,7 +116,7 @@ When dark mode is `never` the site will never be shown in the dark theme
 You can link to section titles using a Markdown anchor link, e.g.: `[About me](#about-me)`. The link after the `#` is the slug version of the title.
 
 ### `assets/main.scss`
-Add any css changes or additions you want to make here after the line `@import 'modern-resume-theme';`
+Add any css changes or additions you want to make here after the line `@use 'modern-resume-theme';`
 
 ----
 

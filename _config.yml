@@ -1,130 +1,105 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+repository: williamdsfs/modern-resume-theme
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
-# email_title: Email (Email title override)
-phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
-# website_title: Web (Website title override)
+name: William Santos
+title: Analista de Infraestrutura | AWS | Data Engineering
+#email: williamdsfs@outlook.com.br
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-orcid_username: 0000-0000-0000-0000
-googlescholar_username: D847cGsAAAAJ
-
-# Additional icon links
-additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+github_username: williamdsfs
+linkedin_username: william-santos-110958299
 
 # About Section
-# about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
-about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+about_title: Resumo Profissional
+about_content: |
+  Atuo há 11 anos na área de TI, com sólida experiência em infraestrutura, administração de ambientes Windows/Linux e suporte a sistemas de missão crítica. Atualmente, foco meu trabalho na automação de processos e melhoria da eficiência operacional utilizando Python, Ruby, Ansible e integração com IA. 
+  
+  Possuo MBA em Análise e Ciência de Dados e busco constantemente o aprimoramento técnico, com estudos avançados em arquitetura AWS e soluções de dados Snowflake. Meu objetivo é garantir ambientes estáveis, seguros e automatizados, alinhando a infraestrutura às necessidades de evolução tecnológica da empresa.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        quote: >
-          Short overview of the project (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
-  - title: Experience
+  - title: Experiência Profissional
     layout: list
     content:
       - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of role
-  - title: Education
+        title: Chatuba Materiais de Construção
+        sub_title: Analista de Infraestrutura de TI
+        caption: 2019 - Presente
+        description: |
+          - **Gestão de Infraestrutura e Redes:** Administração de ambientes Windows, Linux e Microsoft 365, garantindo a alta disponibilidade, performance e sustentação dos serviços críticos.
+          - **Automação e IaC (Infraestrutura como Código):** Desenvolvimento de scripts e playbooks utilizando Python, Ansible, Ruby e PowerShell, incluindo a integração de IA para otimização de rotinas operacionais e deploys.
+          - **Observabilidade e Segurança:** Implantação e manutenção de ecossistema de monitoramento distribuído e soluções de SIEM corporativo focadas na antecipação de falhas, análise de métricas e resposta a incidentes.
+          - **Administração de Banco de Dados:** Gestão de instâncias SQL Server, assegurando a integridade, rotinas de backup e o acesso seguro aos dados corporativos.
+          - **Governança e Projetos de TI:** Atuação técnica em projetos de transformação digital e governança de ativos através de ferramentas centrais de ITSM, gerenciamento de dispositivos móveis (MDM) e Endpoint Management.
+
+      - layout: right
+        title: Chatuba Materiais de Construção
+        sub_title: Técnico de Informática
+        caption: 2015 - 2019
+        description: |
+          - **Suporte Avançado e Conectividade:** Execução de suporte técnico N1 e N2 em hardware, sistemas e infraestrutura de rede, garantindo a rápida resolução de chamados.
+          - **Operação e Continuidade de Negócio:** Atuação direta em manutenções preventivas e corretivas e controle de inventário de ativos, minimizando impactos de paradas técnicas no ambiente operacional.
+
+      - layout: right
+        title: FAETEC
+        sub_title: Estagiário de TI
+        caption: 2014 - 2015
+        description: |
+          Suporte às operações diárias de tecnologia e infraestrutura da instituição.
+
+  - title: Formação Acadêmica
     layout: list
     content:
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
-        quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+        title: Universidade Veiga de Almeida
+        sub_title: Pós-graduação Lato Sensu - MBA, Análise e Ciência de Dados
+        caption: 2024 - 2025
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      - layout: top-right
+        title: Universidade Veiga de Almeida
+        sub_title: Curso Superior de Tecnologia (CST), Tecnologia em Sistemas da Informação
+        caption: 2023 - 2024
+
+      - layout: top-right
+        title: FAETEC
+        sub_title: Curso Técnico Integrado, Informática
+
+  - title: Competências Técnicas
+    layout: text
+    content: |
+      * **Cloud & Infraestrutura:** AWS (Cloud Practitioner), VMWare, Windows Server, Linux (RedHat/Debian), Active Directory, DNS e IIS.
+      * **Automação & Scripting:** Ansible, Python, Ruby, PowerShell e Shell Script.
+      * **Observabilidade & Dados:** Ferramentas de Monitoramento Open Source, Grafana, Soluções de SIEM e SQL Server.
+      * **Metodologias:** ITIL, Scrum Fundamentals, Lean Six Sigma Yellow Belt.
+
+  - title: Certificações
+    layout: text
+    content: |
+      * **AWS Certified Cloud Practitioner**
+      * **Data Engineer Associate**
+      * **Scrum Fundamentals Certified (SFC)**
+      * **Lean Six Sigma Yellow Belt**
 
 # Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
+footer_show_references: false
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+remote_theme: sproogen/modern-resume-theme
 
 sass:
   sass_dir: _sass
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
 
 exclude : [
   "Gemfile",
